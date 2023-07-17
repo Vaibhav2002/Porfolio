@@ -19,25 +19,39 @@ module.exports = {
         brand4: "#1D1C16",
         "brand4-content": "#D4C951",
       },
+      animation: {
+        marquee: "marquee 20s linear infinite",
+        marquee2: "marquee2 20s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
+        marquee2: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
+      },
     },
     fontSize: {
-      sm: "1.25rem",
+      sm: "1rem",
       base: "1.5rem",
       xl: "1.75rem",
-      "2xl": "2.5rem",
-      "3xl": "3rem",
-      "4xl": "3.5rem",
+      "2xl": ['2.5rem', { lineHeight: "normal", }],
+      "3xl": ["3rem", { lineHeight: "normal", }],
+      "4xl": ["3.5rem", { lineHeight: "normal", }],
       "5xl": "4rem",
       "6xl": "5rem",
     },
     fontFamily: {
-      display: ["DM-Sans", "Montserrat", "sans-serif"],
-      body: ["Open-Sans", "Lato", "sans-serif"],
+      display: ["DM Sans", "Montserrat", "sans-serif"],
+      body: ["Open Sans", "Lato", "sans-serif"],
     },
     borderRadius: {
-      large: "4rem",
-    }
-
+      sm: '3rem',
+      lg: '5rem'
+    },
   },
   daisyui: {
     themes: [
