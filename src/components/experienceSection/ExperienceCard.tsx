@@ -30,7 +30,7 @@ const ExperienceCard = ({
 
         <ul className="list-inside list-disc font-body gap-2">
           {description.map((desc, index) => (
-            <li key={index} className="text-start text-[1.25rem] font-thin opacity-80 mb-2">
+            <li key={index} className="text-start text-sm md:text-[1.25rem] font-thin opacity-80 mb-2">
               {desc}
             </li>
           ))}
