@@ -5,7 +5,7 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  plugins: [require("daisyui")],
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
 
   theme: {
     extend: {
@@ -20,6 +20,24 @@ module.exports = {
         "brand4-content": "#D4C951",
       },
     },
+    fontSize: {
+      sm: "1.25rem",
+      base: "1.5rem",
+      xl: "1.75rem",
+      "2xl": "2.5rem",
+      "3xl": "3rem",
+      "4xl": "3.5rem",
+      "5xl": "4rem",
+      "6xl": "5rem",
+    },
+    fontFamily: {
+      display: ["DM-Sans", "Montserrat", "sans-serif"],
+      body: ["Open-Sans", "Lato", "sans-serif"],
+    },
+    borderRadius: {
+      large: "4rem",
+    }
+
   },
   daisyui: {
     themes: [

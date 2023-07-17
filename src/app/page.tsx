@@ -1,5 +1,10 @@
+import AboutMeCard from "@/components/heroSection/AboutMeCard";
+import HeroSection from "@/app/components/HeroSection";
+
 export default function Home() {
   return (
-    <button className="btn bg-brand4 text-brand4-content">Hello Homie</button>
+    <div>
+      <HeroSection/>
+    </div>
   );
 }
