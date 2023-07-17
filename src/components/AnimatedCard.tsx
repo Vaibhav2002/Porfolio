@@ -9,7 +9,7 @@ type AnimatedDivProps = {
 } & MotionProps
 
 const AnimatedDiv = ({ children, className = "", ...motionProps }: AnimatedDivProps) => {
-  return <motion.div {...motionProps}>{children}</motion.div>;
+  return <motion.div {...motionProps} className={className}>{children}</motion.div>;
 };
 
 export default AnimatedDiv;
