@@ -33,14 +33,17 @@ module.exports = {
           "100%": { transform: "translateX(0%)" },
         },
       },
+      borderRadius: {
+        full: "9999px",
+      },
     },
     fontSize: {
       sm: "1rem",
       base: "1.5rem",
       xl: "1.75rem",
-      "2xl": ['2.5rem', { lineHeight: "normal", }],
-      "3xl": ["3rem", { lineHeight: "normal", }],
-      "4xl": ["3.5rem", { lineHeight: "normal", }],
+      "2xl": ["2.5rem", { lineHeight: "normal" }],
+      "3xl": ["3rem", { lineHeight: "normal" }],
+      "4xl": ["3.5rem", { lineHeight: "normal" }],
       "5xl": "4rem",
       "6xl": "5rem",
     },
@@ -49,8 +52,8 @@ module.exports = {
       body: ["Open Sans", "Lato", "sans-serif"],
     },
     borderRadius: {
-      sm: '3rem',
-      lg: '5rem'
+      sm: "3rem",
+      lg: "5rem",
     },
   },
   daisyui: {
