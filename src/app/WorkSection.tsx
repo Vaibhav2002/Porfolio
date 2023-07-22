@@ -15,9 +15,6 @@ const WorkSection = ({ className = "" }: WorkSectionProps) => {
   const animated = useCallback(
     (children: React.ReactNode, delay: number) => (
       <AnimatedDiv
-        whileInView={{ scale: 1 }}
-        initial={{ scale: 0 }}
-        transition={{ duration: 0.5, ease: "easeIn", delay: delay }}
         className="h-full"
       >
         {children}
