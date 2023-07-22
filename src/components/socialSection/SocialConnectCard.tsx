@@ -2,6 +2,7 @@ import React from "react";
 import Card from "@/components/Card";
 import SocialButton from "@/components/socialSection/SocialButton";
 import { FaFile, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import SocialLinks from "@/components/socialSection/SocialLinks";
 
 interface SocialCardProps {
   className?: string;
@@ -27,10 +28,10 @@ const SocialConnectCard = ({ className = "" }: SocialCardProps) => {
         </div>
       </div>
       <div className='flex flex-row flex-wrap gap-2'>
-        <SocialButton icon={<FaLinkedin/>} text='Linkedin' href='https://www.linkedin.com/in/vaibhav-jaiswal-8612621b7'/>
-        <SocialButton icon={<FaTwitter/>} text='Twitter' href='https://twitter.com/VaibhavJais02'/>
-        <SocialButton icon={<FaGithub/>} text='Github' href='https://github.com/Vaibhav2002'/>
-        <SocialButton icon={<FaFile/>} text='Resume' href='https://drive.google.com/file/d/1axri4REwi3p7h0CdgHq_Cp1dS82pdhPC/view'/>
+        <SocialButton icon={<FaLinkedin/>} text='Linkedin' href={SocialLinks.Linkedin}/>
+        <SocialButton icon={<FaTwitter/>} text='Twitter' href={SocialLinks.Twitter}/>
+        <SocialButton icon={<FaGithub/>} text='Github' href={SocialLinks.Github}/>
+        <SocialButton icon={<FaFile/>} text='Resume' href={SocialLinks.Resume}/>
       </div>
     </Card>
   );

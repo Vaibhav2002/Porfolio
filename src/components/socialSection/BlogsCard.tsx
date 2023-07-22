@@ -2,6 +2,7 @@ import React from "react";
 import Card from "@/components/Card";
 import SocialButton from "@/components/socialSection/SocialButton";
 import { FaHashnode, FaMedium } from "react-icons/fa6";
+import SocialLinks from "@/components/socialSection/SocialLinks";
 
 interface BlogsCardProps {
   className?: string;
@@ -24,8 +25,8 @@ const BlogsCard = ({ className = "" }: BlogsCardProps) => {
 
 
       <div className='flex flex-row flex-wrap gap-2'>
-        <SocialButton icon={<FaHashnode/>} text="Hashnode" href='https://vaibhav2002.hashnode.dev'/>
-        <SocialButton icon={<FaMedium/>} text="Medium" href='https://medium.com/@vaibhav3011'/>
+        <SocialButton icon={<FaHashnode/>} text="Hashnode" href={SocialLinks.HashNode}/>
+        <SocialButton icon={<FaMedium/>} text="Medium" href={SocialLinks.Medium}/>
       </div>
     </Card>
   );

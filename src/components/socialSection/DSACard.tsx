@@ -3,6 +3,7 @@ import Card from "@/components/Card";
 import SocialButton from "@/components/socialSection/SocialButton";
 import { FaHackerrank, FaHashnode, FaMedium } from "react-icons/fa6";
 import Icons from "@/assets/icons";
+import SocialLinks from "@/components/socialSection/SocialLinks";
 
 interface DSACardProps {
   className?: string;
@@ -23,10 +24,10 @@ const DSACard = ({ className = "" }: DSACardProps) => {
 
 
       <div className='flex flex-row flex-wrap gap-2'>
-        <SocialButton icon={<Icons.CodeChef/>} text='Codechef' href='https://www.codechef.com/users/vaibhav2511'/>
-        <SocialButton icon={<Icons.LeeetCode size='1.75rem'/>} text='Leetcode' href='https://leetcode.com/vaibhav_jaiswal/'/>
-        <SocialButton icon={<Icons.GeeksForGeeks/>} text='Geeks For Geeks' href='https://auth.geeksforgeeks.org/user/vaibhav02'/>
-        <SocialButton icon={<FaHackerrank/>} text='Hackerrank' href='https://www.hackerrank.com/vaibhav_jaiswal3'/>
+        <SocialButton icon={<Icons.CodeChef/>} text='Codechef' href={SocialLinks.CodeChef}/>
+        <SocialButton icon={<Icons.LeeetCode size='1.75rem'/>} text='Leetcode' href={SocialLinks.LeetCode}/>
+        <SocialButton icon={<Icons.GeeksForGeeks/>} text='Geeks For Geeks' href={SocialLinks.GeeksForGeeks}/>
+        <SocialButton icon={<FaHackerrank/>} text='Hackerrank' href={SocialLinks.Hackerrank}/>
       </div>
 
     </Card>
