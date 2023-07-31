@@ -5,6 +5,7 @@ import WorkSection from "@/app/WorkSection";
 import HeroSection from "@/app/HeroSection";
 import AboutSection from "@/app/AboutSection";
 import { useRef } from "react";
+import ProjectsAndAwardsSection from "@/app/ProjectsAndAwardsSection";
 
 export default function Home() {
 
@@ -38,6 +39,7 @@ export default function Home() {
       />
       <AboutSection ref={aboutSection} />
       <WorkSection ref={workSection} />
+      <ProjectsAndAwardsSection ref={projectsAndAwardsSection}/>
       <ConnectSection ref={socialSection} />
     </div>
   );
