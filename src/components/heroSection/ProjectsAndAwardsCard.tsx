@@ -4,11 +4,12 @@ import { RectangleGroupIcon } from "@heroicons/react/24/outline";
 
 interface ProjectsAndAwardsCardProps {
   className?: string;
+  onClick: () => void;
 }
 
-const ProjectsAndAwardsCard = ({ className }: ProjectsAndAwardsCardProps) => {
+const ProjectsAndAwardsCard = ({ onClick, className }: ProjectsAndAwardsCardProps) => {
   return (
-    <Card className={`flex justify-end bg-accent align-bottom ${className}`}>
+    <Card onClick={onClick} className={`flex justify-end bg-accent align-bottom ${className}`}>
       <div className="align-center flex justify-between items-center">
         <span className="text-accent-content text-base">
           Projects and Awards

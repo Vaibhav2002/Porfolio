@@ -1,14 +1,16 @@
-import React from "react";
+import React, { ComponentProps, forwardRef } from "react";
 import { BlogsCard, ContactForm, DSACard, SocialConnectCard } from "@/components/socialSection";
 
-interface ConnectSectionProps {
-
+type ConnectSectionProps = {
   className?: string;
-}
+} & ComponentProps<"div">
 
-const ConnectSection = ({ className = "" }: ConnectSectionProps) => {
+const ConnectSection = forwardRef(function ConnectSection(
+  { className = "", ...props }: ConnectSectionProps,
+  ref:React.ForwardedRef<HTMLDivElement>
+) {
   return (
-    <div className={`flex flex-col gap-4 p-4 ${className}`}>
+    <div className={`flex flex-col gap-4 p-4 ${className}`} {...props} ref={ref}>
       <SocialConnectCard className='w-full'/>
       <div className='flex flex-col md:flex-row gap-4'>
         <DSACard className='basis-3/5'/>
@@ -17,6 +19,6 @@ const ConnectSection = ({ className = "" }: ConnectSectionProps) => {
       <ContactForm/>
     </div>
   );
-};
+});
 
 export default ConnectSection;

@@ -7,10 +7,14 @@ import {
 } from "@/components/heroSection";
 
 interface HeroSectionProps {
+  onAboutMeClick: () => void;
+  onWorkClick: () => void;
+  onSocialClick: () => void;
+  onProjectsAndAwardsClick: () => void;
   className?: string;
 }
 
-const HeroSection = ({ className }: HeroSectionProps) => {
+const HeroSection = ({ onAboutMeClick, onWorkClick, onSocialClick, onProjectsAndAwardsClick }: HeroSectionProps) => {
   const hoverAnim =
     "hover:scale-[0.97] transition-all ease-in 1s cursor-pointer";
 
@@ -23,14 +27,14 @@ const HeroSection = ({ className }: HeroSectionProps) => {
       </div>
 
       <div className="flex basis-3/5 flex-col gap-2 md:flex-row">
-        <AboutMeCard className={`basis-1/2 ${hoverAnim}`} />
+        <AboutMeCard className={`basis-1/2 ${hoverAnim}`} onClick={onAboutMeClick} />
 
         <div className="flex basis-1/2 flex-col gap-2">
           <div className="flex basis-1/2 flex-col gap-2 lg:flex-row">
-            <WorkCard className={`basis-1/2 ${hoverAnim}`} />
-            <SocialCard className={`basis-1/2 ${hoverAnim}`} />
+            <WorkCard className={`basis-1/2 ${hoverAnim}`} onClick={onWorkClick} />
+            <SocialCard className={`basis-1/2 ${hoverAnim}`} onClick={onSocialClick} />
           </div>
-          <ProjectsAndAwardsCard className={`basis-1/2 ${hoverAnim}`} />
+          <ProjectsAndAwardsCard className={`basis-1/2 ${hoverAnim}`} onClick={onProjectsAndAwardsClick} />
         </div>
       </div>
     </div>

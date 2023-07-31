@@ -4,11 +4,12 @@ import { CodeBracketSquareIcon, EnvelopeIcon } from "@heroicons/react/24/outline
 
 interface SocialCardProps {
   className?: string;
+  onClick: () => void;
 }
 
-const SocialCard = ({ className='' }: SocialCardProps) => {
+const SocialCard = ({ className='', onClick }: SocialCardProps) => {
   return (
-    <Card className={`flex justify-end bg-base-200 align-bottom ${className}`}>
+    <Card onClick={onClick} className={`flex justify-end bg-base-200 align-bottom ${className}`}>
       <div className="align-center flex justify-between items-center">
         <span className="text-base-content text-base">Socials</span>
         <EnvelopeIcon className="h-6 w-6 text-base-content" />

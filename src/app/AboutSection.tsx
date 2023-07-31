@@ -1,21 +1,25 @@
-import React from "react";
+import React, { ComponentProps, forwardRef } from "react";
 import {
   AboutMeCard,
-  AndroidDevCard, SkillsCard,
-  WebDevCard
+  AndroidDevCard,
+  SkillsCard,
+  WebDevCard,
 } from "@/components/aboutMeSection";
 import AnimatedCard from "@/components/AnimatedCard";
 
-interface AboutSectionProps {
+type AboutSectionProps = {
   className?: string;
-}
+} & ComponentProps<"div">;
 
-const AboutSection = ({ className = "" }: AboutSectionProps) => {
+const AboutSection = forwardRef(function AboutSection(
+  { className = "", ...props }: AboutSectionProps,
+  ref: React.ForwardedRef<HTMLDivElement>,
+) {
   return (
-    <div className="flex flex-col gap-4 p-4">
+    <div className="flex flex-col gap-4 p-4" {...props} ref={ref}>
       <AboutMeCard />
 
-      <div className="flex flex-col gap-4 md:flex-row overflow-x-hidden">
+      <div className="flex flex-col gap-4 overflow-x-hidden md:flex-row">
         <AnimatedCard
           className="z-10 basis-1/2"
           initial={{ x: 350 }}
@@ -35,9 +39,9 @@ const AboutSection = ({ className = "" }: AboutSectionProps) => {
         </AnimatedCard>
       </div>
 
-      <SkillsCard/>
+      <SkillsCard />
     </div>
   );
-};
+});
 
 export default AboutSection;
