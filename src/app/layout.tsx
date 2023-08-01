@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
 const dmSans = DM_Sans({ weight: ["400", "500", "700"], subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={dmSans.className}>
         <main>{children}</main>
+        <Analytics/>
       </body>
     </html>
   );
