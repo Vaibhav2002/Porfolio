@@ -39,7 +39,7 @@ export default function Home() {
       />
       <AboutSection ref={aboutSection} />
       <WorkSection ref={workSection} />
-      <ProjectsAndAwardsSection ref={projectsAndAwardsSection}/>
+      <ProjectsAndAwardsSection ref={projectsAndAwardsSection} onBlogSeeMore={onSocialClick}/>
       <ConnectSection ref={socialSection} />
     </div>
   );

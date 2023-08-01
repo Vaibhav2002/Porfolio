@@ -1,17 +1,19 @@
 import React, { forwardRef } from "react";
-import { ProjectsCard } from "@/components/projectsAndAwardsSection";
+import { BlogsCard, ProjectsCard } from "@/components/projectsAndAwardsSection";
 
 interface ProjectsAndAwardsSectionProps {
+  onBlogSeeMore:() => void
   className?: string;
 }
 
 const ProjectsAndAwardsSection = forwardRef(function ProjectsSection(
-  { className = "" }: ProjectsAndAwardsSectionProps,
+  {onBlogSeeMore,className = "" }: ProjectsAndAwardsSectionProps,
   ref: React.ForwardedRef<HTMLDivElement>
 ){
   return (
-    <div className={`p-4 ${className}`} ref={ref}>
+    <div className={`flex flex-col p-4 gap-4 ${className}`} ref={ref}>
       <ProjectsCard />
+      <BlogsCard onSeeMoreBlogsPressed={onBlogSeeMore} />
     </div>
   );
 });
