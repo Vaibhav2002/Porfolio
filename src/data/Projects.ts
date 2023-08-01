@@ -19,7 +19,7 @@ const projects: Project[] = [
     name: 'Taskify',
     description: "Taskify - An app to manage your daily tasks and boost your productivity.",
     url: "https://github.com/Vaibhav2002/Taskify",
-    imageUrl: "https://opengraph.githubassets.com/cfca6353cd1da4d7606d225cbb94cd80c71fcea0a0fedc58e07aade17512f3f1/Vaibhav2002/Taskify"
+    imageUrl: image("375697442/19788377-151a-4b34-a92f-d675c29660fe")
   },
   {
     name: "MusicX",
