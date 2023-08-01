@@ -12,7 +12,7 @@ const ProjectsAndAwardsCard = ({ onClick, className }: ProjectsAndAwardsCardProp
     <Card onClick={onClick} className={`flex justify-end bg-accent align-bottom ${className}`}>
       <div className="align-center flex justify-between items-center">
         <span className="text-accent-content text-base">
-          Projects and Awards
+          Projects and Achievements
         </span>
         <RectangleGroupIcon className="h-6 w-6 text-accent-content" />
       </div>

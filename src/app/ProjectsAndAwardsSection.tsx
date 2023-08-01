@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-import { BlogsCard, ProjectsCard } from "@/components/projectsAndAwardsSection";
+import { AchievementsCard, BlogsCard, ProjectsCard } from "@/components/projectsAndAwardsSection";
 
 interface ProjectsAndAwardsSectionProps {
   onBlogSeeMore:() => void
@@ -14,6 +14,7 @@ const ProjectsAndAwardsSection = forwardRef(function ProjectsSection(
     <div className={`flex flex-col p-4 gap-4 ${className}`} ref={ref}>
       <ProjectsCard />
       <BlogsCard onSeeMoreBlogsPressed={onBlogSeeMore} />
+      <AchievementsCard/>
     </div>
   );
 });
