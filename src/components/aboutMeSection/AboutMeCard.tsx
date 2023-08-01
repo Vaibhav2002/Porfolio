@@ -2,16 +2,19 @@ import React from "react";
 import Card from "@/components/Card";
 
 interface AboutMeCardProps {
-
   className?: string;
 }
 
 const AboutMeCard = ({ className = "" }: AboutMeCardProps) => {
   return (
-    <Card className='bg-base-200 text-primary flex flex-col gap-8 lg:py-16'>
-      <span className='text-sm md:text-base'>ABOUT ME</span>
-      <span className='font-body text-base md:text-2xl lg:text-3xl xl:text-4xl font-light lg:pe-16'>
-        Lorem ipsum dolor sit amet consectetur. Ac quisque vestibulum tristique sagittis elit. Felis morbi arcu at nibh id. Volutpat nisl maecenas ac sollicitudin nibh in integer. Consequat enim nisi viverra eu gravida amet aliquet quam lacus. At lobortis ut facilisi volutpat ut. Nisl tincidunt sit tristique hendrerit odio nec ut proin.
+    <Card className="flex flex-col gap-8 bg-base-200 text-primary lg:py-16">
+      <span className="text-sm md:text-base">ABOUT ME</span>
+      <span className="font-body text-base font-light md:text-2xl lg:pe-16 lg:text-3xl xl:text-4xl">
+        I am <strong>Vaibhav Jaiswal</strong>, a Computer Science Engineering
+        student, currently working as a Software Engineer Intern at Pratilipi. I
+        specialize in MERN Development and possess years of experience in
+        Android Development.<br /> My projects weave technology into captivating stories, leaving a
+        lasting impression. Let&apos;s code some magic!
       </span>
     </Card>
   );

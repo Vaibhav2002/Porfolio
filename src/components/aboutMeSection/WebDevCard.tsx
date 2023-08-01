@@ -8,7 +8,7 @@ interface WebDevCardProps {
 const WebDevCard = ({ className = "" }: WebDevCardProps) => {
   return (
     <Card
-      className={`flex flex-col gap-4 bg-primary text-primary-content lg:py-18 ${className}`}
+      className={`lg:py-18 flex flex-col gap-4 bg-primary text-primary-content ${className}`}
     >
       <span className="text-base font-medium md:text-2xl xl:text-3xl">
         Full Stack
@@ -16,8 +16,9 @@ const WebDevCard = ({ className = "" }: WebDevCardProps) => {
         Web Development
       </span>
       <span className="text-sm text-primary-content/70 md:text-base xl:text-xl">
-        Lorem ipsum dolor sit amet consectetur. Nec varius nulla varius libero
-        metus pellentesque augue.
+        As a Fullstack developer, I specialize in creating seamless,
+        feature-rich applications that harmoniously blend front-end and back-end
+        expertise to ensure an exceptional user experience.
       </span>
     </Card>
   );

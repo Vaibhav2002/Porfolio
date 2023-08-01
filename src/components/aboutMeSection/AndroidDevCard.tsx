@@ -15,8 +15,8 @@ const AndroidDevCard = ({ className = "" }: AndroidDevCardProps) => {
         Development
       </span>
       <span className="text-sm text-primary/70 md:text-base xl:text-xl">
-        Lorem ipsum dolor sit amet consectetur. Nec varius nulla varius libero
-        metus pellentesque augue.
+        As an Android developer, I create clean,
+        user-friendly apps with a focus on performance, security, and even with cross-platform compatibility using Kotlin Multiplatform.
       </span>
     </Card>
   );
