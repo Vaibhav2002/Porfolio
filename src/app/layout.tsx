@@ -21,7 +21,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={dmSans.className}>
-        <main>{children}</main>
+        <main>
+          <div className="max-w-[1920px] mx-auto">
+              {children}
+          </div>
+
+        </main>
         <Analytics/>
       </body>
     </html>
