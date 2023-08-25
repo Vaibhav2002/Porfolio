@@ -19,20 +19,6 @@ module.exports = {
         brand4: "#1D1C16",
         "brand4-content": "#D4C951",
       },
-      animation: {
-        marquee: "marquee 20s linear infinite",
-        marquee2: "marquee2 20s linear infinite",
-      },
-      keyframes: {
-        marquee: {
-          "0%": { transform: "translateX(100%)" },
-          "100%": { transform: "translateX(0%)" },
-        },
-        marquee2: {
-          "0%": { transform: "translateX(100%)" },
-          "100%": { transform: "translateX(0%)" },
-        },
-      },
       borderRadius: {
         full: "9999px",
       },

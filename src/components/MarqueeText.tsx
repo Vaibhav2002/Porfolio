@@ -1,16 +1,23 @@
 import React from "react";
+import Marquee from "react-fast-marquee";
 
 interface MarqueeTextProps {
+  play?:boolean,
+  pauseOnHover?:boolean,
   children: React.ReactNode;
   className?: string;
 }
 
-const MarqueeText = ({ children, className = "" }: MarqueeTextProps) => {
+const MarqueeText = ({ children, play=true, pauseOnHover, className = "" }: MarqueeTextProps) => {
+  const visibility = play ? "opacity-100" : "opacity-0";
   return (
-    <div className='flex flex-row whitespace-nowrap overflow-hidden'>
-      <div className={`animate-marquee ${className}`}>{children}</div>
-      <div className={`animate-marquee ${className}`}>{children}</div>
-    </div>
+    <Marquee
+      play={play}
+      pauseOnHover={pauseOnHover}
+      className={`${visibility} ${className} transition-all ease-in-out duration-500`}
+    >
+      {children}
+    </Marquee>
   );
 };
 
