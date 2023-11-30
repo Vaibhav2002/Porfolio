@@ -6,7 +6,7 @@ const workExperience: WorkExperience = {
       company: "Pratilipi",
       position: "Software Engineer - Intern",
       startDate: "Apr 2022",
-      endDate: "Present",
+      endDate: "July 2023",
       description: [
         "Revamped UI of IVM Podcasts, ensuring a fluid User Experience and implementing a redesigned homepage using Jetpack Compose.",
         "Modernized Pratilipi Comics codebase, adopting best practices of Modern Android Development and improving overall efficiency.",
